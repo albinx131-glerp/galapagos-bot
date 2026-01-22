@@ -125,4 +125,6 @@ async def ticket(ctx):
 
     await ctx.send(embed=embed, view=TicketView())
 
-bot.run("MTQ2MzU3NzQzNTE4OTgwOTQ5Nw.GvX9vU.yDDou6Ji7qbEtdYaxRGgJ3-XurQNdgQhpVrH3M")
+
+import os
+bot.run(os.getenv("TOKEN"))
