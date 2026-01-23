@@ -1,3 +1,5 @@
+from keep_alive import keep_alive
+
 import discord
 from discord import app_commands
 from discord.ext import commands
@@ -126,5 +128,7 @@ async def ticket(ctx):
     await ctx.send(embed=embed, view=TicketView())
 
 
+keep_alive()
 import os
 bot.run(os.getenv("TOKEN"))
+
